@@ -1,0 +1,42 @@
+.header{
+  a{
+    font-size: $font-xl;
+    font-weight: bold;
+    color: #000000;
+    @include ipad{
+      font-size: $font-m;
+    }
+    @include mobile{
+      font-size: 16px;
+    }
+  }
+  .block{
+    text-align: center;
+    border: 1px solid #DCDCDC;
+    li{
+      width: 33.3333%;
+      padding: 24px 0;
+      border: 1px solid #DCDCDC;
+      border-bottom: 8px solid transparent;
+      @include ipad{
+        padding: 16px 0;
+      }
+    }
+  }
+  li:hover{
+    border-bottom: 8px solid #AA0601;
+  }
+}
+
+.block-pc{
+  @include ipad{
+    display: none;
+  }
+}
+
+.block-ipad{
+  @include ipad{
+    display: block;
+    display: flex;
+  }
+}

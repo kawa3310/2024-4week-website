@@ -1,0 +1,37 @@
+.nav{
+  background-color: $text-danger-50;
+  .logo{
+    width: 80px;
+    height: 48px;
+    margin: 12px 0;
+    background: url("https://github.com/kawa3310/2024-3week-website/blob/main/img/logo-new1.png?raw=true") no-repeat center / cover;
+    @include mobile{
+      margin: 16px 0;
+    }
+  }
+  .menu{
+    li{
+      font-size: $font-s;
+      padding-left: 64px;
+    }
+  }
+}
+
+.pc-menu{
+  @include mobile{
+    display: none;
+  }
+}
+
+.mobile-menu{
+  display: none;
+  @include mobile{
+    display: flex;
+    flex-direction: column;
+  }
+  li{
+    width: 50%;
+    border: 1px solid #FFFFFF;
+    padding: 12px 0;
+  }
+}

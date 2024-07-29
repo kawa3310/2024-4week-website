@@ -1,0 +1,37 @@
+@mixin ipad{
+  @media(max-width: 768px){
+    @content;
+  }
+}
+
+@mixin mobile{
+  @media(max-width: 375px){
+    @content;
+  }
+}
+
+.pt-8{
+  padding-top: 80px;
+}
+
+.pb-8{
+  padding-bottom: 80px;
+}
+
+.pb-2{
+  padding-bottom: 24px;
+}
+
+.py-12{
+  padding: 0 12px;
+}
+
+.py80-48{
+  padding: 80px 0 48px;
+}
+
+.py40-24{
+  @include mobile{
+    padding: 40px 0 24px;
+  }
+}

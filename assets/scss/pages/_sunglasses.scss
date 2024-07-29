@@ -1,0 +1,41 @@
+.sunglasses{
+  @include mobile{
+    margin-bottom: 64px;
+  }
+  .row{
+    margin: 0 -12px;
+  }
+  h3{
+    font-size: $font-lx;
+    @include mobile{
+      padding-top: 40px;
+      font-size: $font-m;
+    }
+  }
+  h4{
+    padding-bottom: 32px;
+    @include mobile{
+      padding-bottom: 24px;
+      font-size: $font-m;
+    }
+  }
+}
+
+.sunglasses-box{
+  font-size: $font-m;
+  .sunglasses-body{
+    width: 33.3333%;
+    padding: 0px 12px 80px;
+    @include ipad{
+      width: 50%;
+    }
+    @include mobile{
+      width: 100%;
+      padding: 0px 12px 24px;
+    }
+  }
+  span{
+    color: $text-danger-50;
+    font-weight: bold;
+  }
+}

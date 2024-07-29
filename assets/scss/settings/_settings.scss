@@ -1,0 +1,41 @@
+@import './variable';
+@import './resetCss';
+@import './spacing';
+@import './flex';
+
+body{
+  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  color: $text-danger;
+}
+
+*,*::before,*::after { 
+  box-sizing: border-box; 
+} 
+
+img{
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+a{
+  text-decoration: none;
+  color: $text-light;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 36
+}
+
+.container{
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+}

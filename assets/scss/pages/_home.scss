@@ -1,0 +1,245 @@
+h3{
+  font-size: $font-xl;
+  font-weight: bold;
+  text-align: center;
+  @include mobile{
+    font-size: $font-m;
+  }
+}
+
+.bc-img{
+  .main-img{  
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true") no-repeat center center/ cover;
+    @include ipad{
+      background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true") no-repeat center center / cover;
+    }
+  }
+}
+
+.title{
+  padding: 296px 0;
+  @include mobile{
+    padding: 144px 0;
+  }
+  .title-group{
+    text-align: right;
+    p{
+      font-size: $font-l;
+      @include mobile{
+        font-size: 16px;
+      }
+    }
+    h2{
+      font-size: $font-xxl;
+      font-weight: bold;
+      padding-top: 4px;
+      @include mobile{
+        font-size: $font-m;
+        padding-top: 8px;
+      }
+    }
+    .btn{
+      padding-top: 4px;
+      @include mobile{
+        padding-top: 8px;
+      }
+      a{
+        background-color: $text-danger-50;
+        padding: 6px 12px;
+        font-size: $font-s;
+      }
+    }
+  }
+}
+
+.main{
+  background-color: #FBF2F2;
+  h3{
+    @include mobile{
+      padding-top: 40px;
+    }
+  }
+  .row{
+    margin: 0 -12px;
+    padding: 24px 0 80px 0;
+    @include mobile{
+      padding-bottom: 40px;
+    }
+    .col-3{
+      width: 25%;
+      @include ipad{
+        width: 50%;
+      }
+      @include mobile{
+        width: 100%;
+      }
+    }
+  }
+}
+
+.card-title{
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  @include mobile{
+    padding-bottom: 24px;
+  }
+  img{
+    width: 84px;
+  }
+  h4{
+    font-size: $font-m;
+    font-weight: bold;
+    color: $text-danger;
+    padding-bottom: 8px;
+    @include mobile{
+      padding: 16px 0 8px;
+    }
+  }
+}
+
+.section{
+  .row{
+    margin: 0 -12px;
+  }
+  .col-4{
+    width: 33.3333%;
+    @include ipad{
+      width: 100%;
+    }
+    h3{
+      font-style: italic;
+      color: $text-danger-50;
+      padding-top: 8px;
+      @include mobile{
+        font-size: $font-xl;
+      }
+    }
+  }
+}
+
+.side-img{
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
+  @include mobile{
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true") center center /cover;
+    margin-top: 40px;
+  }
+  h3{
+    color: $text-light;
+    @include mobile{
+      font-size: $font-m;
+    }
+  }
+  .card{
+    width: 50%;
+    @include ipad{
+      width: 100%;
+    }
+  }
+  .text{
+    font-style: italic;
+    background-color: $text-light;
+    color: $text-danger-50;
+    margin-bottom: 80px;
+    @include mobile{
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.comment{
+  @include mobile{
+    margin-bottom: 40px;
+    padding-bottom: 0;
+  }
+  .row{
+    margin: 0 -12px;
+  }
+  .col-3{
+    width: 25%;
+    @include ipad{
+      width: 50%;
+    }
+    @include mobile{
+      width: 100%;
+    }
+  }
+}
+
+.card-body{
+  border-radius: 4px;
+  box-shadow: 0px 2px 6px #00000029;
+  @include ipad{
+    margin-bottom: 24px;
+    height: auto;
+  }
+  .data{
+    color: #000000;
+    padding: 16px 16px 16px 16px;
+    p{
+      padding: 8px 0 48px;
+      @include ipad{
+        padding-bottom: 72px;
+      }
+    }
+    span{
+      font-size: $font-sm;
+      color: #707070;
+    }
+  }
+}
+
+.service{
+  background-color: #FBF2F2;
+  padding-bottom: 80px;
+  @include mobile{
+    padding-bottom: 40px;
+  }
+  .col-6{
+    max-width: 636px;
+    margin: 0 auto;
+    color: #000000;
+    font-size: $font-s;
+    @include ipad{
+      font-size: 16px;
+    }
+    h3{
+      color: $text-danger;
+    }
+  }
+}
+
+form{
+  margin-top: 24px;
+  font-size: 16px;
+  input{
+    width: 100%;
+    margin: 8px 0 16px;
+    padding: 6px 12px 6px;
+  }
+  .checkbox{
+    width: 24px;
+    margin-bottom: 48px;
+    @include mobile{
+      margin-bottom: 0px;
+    }
+  }
+  textarea{
+    resize: none;
+    padding: 6px 12px 106px;
+    margin-bottom: 16px;
+  }
+  .submit{
+    max-width: 416px;
+    border: 0;
+    color: $text-light;
+    background-color: $text-danger-50;
+    padding: 16px 0;
+    :hover{
+      background-color: $text-danger;
+    }
+    @include mobile{
+      margin-top: 24px;
+    }
+  }
+}
