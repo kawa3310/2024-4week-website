@@ -701,9 +701,6 @@ section .bc-img {
     margin-bottom: 64px;
   }
 }
-.products .row {
-  margin: 0 -12px;
-}
 .products h3 {
   font-size: 42px;
 }
@@ -765,9 +762,6 @@ section .bc-img {
   .sunglasses {
     margin-bottom: 64px;
   }
-}
-.sunglasses .row {
-  margin: 0 -12px;
 }
 .sunglasses h3 {
   font-size: 42px;

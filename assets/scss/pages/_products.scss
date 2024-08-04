@@ -20,9 +20,6 @@ section{
   @include mobile{
     margin-bottom: 64px;
   }
-  .row{
-    margin: 0 -12px;
-  }
   h3{
     font-size: $font-lx;
     @include mobile{
