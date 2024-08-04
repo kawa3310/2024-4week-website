@@ -138,6 +138,10 @@ a {
   padding: 0 12px;
 }
 
+.row {
+  margin: 0px -12px;
+}
+
 .nav {
   background-color: #AA0601;
 }
@@ -397,14 +401,16 @@ h3 {
 }
 
 .title {
-  padding: 296px 0;
+  height: 787px;
+  justify-content: flex-end;
 }
 @media (max-width: 375px) {
   .title {
-    padding: 144px 0;
+    height: 396px;
   }
 }
 .title .title-group {
+  align-items: center;
   text-align: right;
 }
 .title .title-group p {
@@ -439,6 +445,9 @@ h3 {
   padding: 6px 12px;
   font-size: 20px;
 }
+.title .title-group .btn :hover {
+  background-color: #650300;
+}
 
 .main {
   background-color: #FBF2F2;
@@ -448,25 +457,24 @@ h3 {
     padding-top: 40px;
   }
 }
-.main .row {
-  margin: 0 -12px;
-  padding: 24px 0 80px 0;
+.main .row-cart {
+  padding-bottom: 80px;
 }
 @media (max-width: 375px) {
-  .main .row {
+  .main .row-cart {
     padding-bottom: 40px;
   }
 }
-.main .row .col-3 {
+.main .row-cart .col-3 {
   width: 25%;
 }
 @media (max-width: 768px) {
-  .main .row .col-3 {
+  .main .row-cart .col-3 {
     width: 50%;
   }
 }
 @media (max-width: 375px) {
-  .main .row .col-3 {
+  .main .row-cart .col-3 {
     width: 100%;
   }
 }
@@ -496,11 +504,9 @@ h3 {
   }
 }
 
-.section .row {
-  margin: 0 -12px;
-}
 .section .col-4 {
   width: 33.3333%;
+  padding: 0 12px;
 }
 @media (max-width: 768px) {
   .section .col-4 {
@@ -519,7 +525,13 @@ h3 {
 }
 
 .side-img {
-  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true") center center/cover;
+}
+@media (max-width: 768px) {
+  .side-img {
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true") center center/cover;
+    margin-top: 80px;
+  }
 }
 @media (max-width: 375px) {
   .side-img {
@@ -529,11 +541,7 @@ h3 {
 }
 .side-img h3 {
   color: #FFFFFF;
-}
-@media (max-width: 375px) {
-  .side-img h3 {
-    font-size: 24px;
-  }
+  font-weight: bold;
 }
 .side-img .card {
   width: 50%;
@@ -541,6 +549,14 @@ h3 {
 @media (max-width: 768px) {
   .side-img .card {
     width: 100%;
+  }
+}
+.side-img .card h3 {
+  padding-top: 8px;
+}
+@media (max-width: 375px) {
+  .side-img .card h3 {
+    font-size: 48px;
   }
 }
 .side-img .text {
@@ -561,11 +577,9 @@ h3 {
     padding-bottom: 0;
   }
 }
-.comment .row {
-  margin: 0 -12px;
-}
 .comment .col-3 {
   width: 25%;
+  padding: 0 12px;
 }
 @media (max-width: 768px) {
   .comment .col-3 {
@@ -651,6 +665,8 @@ form textarea {
   resize: none;
   padding: 6px 12px 106px;
   margin-bottom: 16px;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
 }
 form .submit {
   max-width: 416px;
@@ -658,9 +674,6 @@ form .submit {
   color: #FFFFFF;
   background-color: #AA0601;
   padding: 16px 0;
-}
-form .submit :hover {
-  background-color: #650300;
 }
 @media (max-width: 375px) {
   form .submit {
