@@ -1,11 +1,8 @@
 .header{
   a{
-    font-size: $font-xl;
+    font-size: 4.5vmin;
     font-weight: bold;
     color: #000000;
-    @include ipad{
-      font-size: $font-m;
-    }
     @include mobile{
       font-size: 16px;
     }

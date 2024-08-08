@@ -102,7 +102,6 @@ h3{
   }
 }
 
-
 .section{
   .col-4{
     width: 33.3333%;
@@ -111,12 +110,11 @@ h3{
       width: 100%;
     }
     h3{
+      font-size: 5vmin;
+      font-weight: bold;
       font-style: italic;
       color: $text-danger-50;
       padding-top: 8px;
-      @include mobile{
-        font-size: $font-xl;
-      }
     }
   }
 }
