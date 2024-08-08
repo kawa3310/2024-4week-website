@@ -1,3 +1,9 @@
+@mixin pcInterval{
+  @media(max-width: 950px){
+    @content;
+  }
+}
+
 @mixin ipad{
   @media(max-width: 768px){
     @content;
@@ -5,7 +11,7 @@
 }
 
 @mixin mobile{
-  @media(max-width: 375px){
+  @media(max-width: 450px){
     @content;
   }
 }

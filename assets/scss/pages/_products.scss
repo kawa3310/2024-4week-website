@@ -37,12 +37,17 @@ section{
 }
 
 .card-box{
-  font-size: $font-m;
+  font-size: 3.3vmin;
   .card{
+    flex-flow: row wrap;
     width: 25%;
     padding: 0px 12px 80px;
+    @include pcInterval{
+      font-size: 2vmin;
+    }
     @include ipad{
       width: 50%;
+      font-size: 3.3vmin;
     }
     @include mobile{
       width: 100%;

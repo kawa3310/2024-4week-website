@@ -73,7 +73,7 @@ table {
   padding: 80px 0 48px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .py40-24 {
     padding: 40px 0 24px;
   }
@@ -151,7 +151,7 @@ a {
   margin: 12px 0;
   background: url("https://github.com/kawa3310/2024-3week-website/blob/main/img/logo-new1.png?raw=true") no-repeat center/cover;
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .nav .logo {
     margin: 16px 0;
   }
@@ -161,7 +161,7 @@ a {
   padding-left: 64px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .pc-menu {
     display: none;
   }
@@ -170,7 +170,7 @@ a {
 .mobile-menu {
   display: none;
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .mobile-menu {
     display: flex;
     flex-direction: column;
@@ -183,16 +183,11 @@ a {
 }
 
 .header a {
-  font-size: 48px;
+  font-size: 4.5vmin;
   font-weight: bold;
   color: #000000;
 }
-@media (max-width: 768px) {
-  .header a {
-    font-size: 24px;
-  }
-}
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .header a {
     font-size: 16px;
   }
@@ -236,7 +231,7 @@ a {
   padding: 12px 16px;
   border: 1px solid #555555;
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .pages li {
     padding: 12px 15px;
   }
@@ -255,6 +250,13 @@ a {
   background-color: #F2F2F2;
 }
 
+.active {
+  background-color: #000000;
+}
+.active a {
+  color: #FFFFFF;
+}
+
 .footer {
   padding-bottom: 32px;
   background-color: #AA0601;
@@ -266,7 +268,7 @@ a {
     padding-bottom: 40px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .footer {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -281,12 +283,12 @@ a {
     margin-bottom: 32px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .subnav {
     align-items: start;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .subnav .menu {
     display: none;
   }
@@ -303,7 +305,7 @@ a {
     padding-left: 16px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .community {
     padding-left: 8px;
   }
@@ -311,33 +313,27 @@ a {
 .community img {
   width: 48px;
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .community img {
     width: 24px;
   }
 }
 
 .contact {
-  font-size: 36px;
+  font-size: 5vmin;
   align-items: center;
 }
-@media (max-width: 375px) {
-  .contact {
-    font-size: 16px;
-  }
-}
 .contact span {
-  font-size: 36px;
   padding-right: 22px;
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .contact span {
     font-size: 20px;
     padding-right: 11px;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .pc-contact {
     display: none;
   }
@@ -346,26 +342,27 @@ a {
 .mobile-contact {
   display: none;
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .mobile-contact {
     display: block;
   }
 }
 
 .border {
-  margin: 32px 0;
+  border-bottom: 1px solid #FFFFFF;
+  padding: 32px 0;
 }
 
 .footer-text {
   margin: 32px 0;
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .footer-text {
     display: block;
     margin-bottom: 0;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .footer-text .copyright ul {
     display: block;
   }
@@ -374,7 +371,7 @@ a {
   font-size: 14px;
   padding-left: 48px;
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .footer-text .copyright ul li {
     padding: 8px 0 0 0;
   }
@@ -385,7 +382,7 @@ h3 {
   font-weight: bold;
   text-align: center;
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   h3 {
     font-size: 24px;
   }
@@ -404,7 +401,7 @@ h3 {
   height: 787px;
   justify-content: flex-end;
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .title {
     height: 396px;
   }
@@ -416,7 +413,7 @@ h3 {
 .title .title-group p {
   font-size: 36px;
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .title .title-group p {
     font-size: 16px;
   }
@@ -426,7 +423,7 @@ h3 {
   font-weight: bold;
   padding-top: 4px;
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .title .title-group h2 {
     font-size: 24px;
     padding-top: 8px;
@@ -435,7 +432,7 @@ h3 {
 .title .title-group .btn {
   padding-top: 4px;
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .title .title-group .btn {
     padding-top: 8px;
   }
@@ -452,7 +449,7 @@ h3 {
 .main {
   background-color: #FBF2F2;
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .main h3 {
     padding-top: 40px;
   }
@@ -460,7 +457,7 @@ h3 {
 .main .row-cart {
   padding-bottom: 80px;
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .main .row-cart {
     padding-bottom: 40px;
   }
@@ -473,7 +470,7 @@ h3 {
     width: 50%;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .main .row-cart .col-3 {
     width: 100%;
   }
@@ -484,7 +481,7 @@ h3 {
   align-items: center;
   color: #000000;
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .card-title {
     padding-bottom: 24px;
   }
@@ -498,7 +495,7 @@ h3 {
   color: #650300;
   padding-bottom: 8px;
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .card-title h4 {
     padding: 16px 0 8px;
   }
@@ -514,14 +511,11 @@ h3 {
   }
 }
 .section .col-4 h3 {
+  font-size: 5vmin;
+  font-weight: bold;
   font-style: italic;
   color: #AA0601;
   padding-top: 8px;
-}
-@media (max-width: 375px) {
-  .section .col-4 h3 {
-    font-size: 48px;
-  }
 }
 
 .side-img {
@@ -533,7 +527,7 @@ h3 {
     margin-top: 80px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .side-img {
     background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true") center center/cover;
     margin-top: 40px;
@@ -554,7 +548,7 @@ h3 {
 .side-img .card h3 {
   padding-top: 8px;
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .side-img .card h3 {
     font-size: 48px;
   }
@@ -565,13 +559,13 @@ h3 {
   color: #AA0601;
   margin-bottom: 80px;
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .side-img .text {
     margin-bottom: 40px;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .comment {
     margin-bottom: 40px;
     padding-bottom: 0;
@@ -586,7 +580,7 @@ h3 {
     width: 50%;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .comment .col-3 {
     width: 100%;
   }
@@ -623,7 +617,7 @@ h3 {
   background-color: #FBF2F2;
   padding-bottom: 80px;
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .service {
     padding-bottom: 40px;
   }
@@ -656,7 +650,7 @@ form .checkbox {
   width: 24px;
   margin-bottom: 48px;
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   form .checkbox {
     margin-bottom: 0px;
   }
@@ -675,7 +669,7 @@ form .submit {
   background-color: #AA0601;
   padding: 16px 0;
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   form .submit {
     margin-top: 24px;
   }
@@ -696,7 +690,7 @@ section .bc-img {
   width: 50%;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .products {
     margin-bottom: 64px;
   }
@@ -704,7 +698,7 @@ section .bc-img {
 .products h3 {
   font-size: 42px;
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .products h3 {
     padding-top: 40px;
     font-size: 24px;
@@ -713,7 +707,7 @@ section .bc-img {
 .products h4 {
   padding-bottom: 32px;
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .products h4 {
     padding-bottom: 24px;
     font-size: 24px;
@@ -721,18 +715,25 @@ section .bc-img {
 }
 
 .card-box {
-  font-size: 24px;
+  font-size: 3.3vmin;
 }
 .card-box .card {
+  flex-flow: row wrap;
   width: 25%;
   padding: 0px 12px 80px;
+}
+@media (max-width: 950px) {
+  .card-box .card {
+    font-size: 2vmin;
+  }
 }
 @media (max-width: 768px) {
   .card-box .card {
     width: 50%;
+    font-size: 3.3vmin;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .card-box .card {
     width: 100%;
     padding: 0px 12px 24px;
@@ -758,7 +759,7 @@ section .bc-img {
   border-radius: 4px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .sunglasses {
     margin-bottom: 64px;
   }
@@ -766,7 +767,7 @@ section .bc-img {
 .sunglasses h3 {
   font-size: 42px;
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .sunglasses h3 {
     padding-top: 40px;
     font-size: 24px;
@@ -775,7 +776,7 @@ section .bc-img {
 .sunglasses h4 {
   padding-bottom: 32px;
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .sunglasses h4 {
     padding-bottom: 24px;
     font-size: 24px;
@@ -783,7 +784,7 @@ section .bc-img {
 }
 
 .sunglasses-box {
-  font-size: 24px;
+  font-size: 3.3vmin;
 }
 .sunglasses-box .sunglasses-body {
   width: 33.3333%;
@@ -794,7 +795,7 @@ section .bc-img {
     width: 50%;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .sunglasses-box .sunglasses-body {
     width: 100%;
     padding: 0px 12px 24px;

@@ -47,13 +47,9 @@
 }
 
 .contact{
-  font-size: $font-l;
+  font-size: 5vmin;
   align-items: center;
-  @include mobile{
-    font-size: 16px;
-  }
   span{
-    font-size: $font-l;
     padding-right: 22px;
     @include mobile{
       font-size: 20px;
@@ -76,7 +72,8 @@
 }
 
 .border{
-  margin: 32px 0;
+  border-bottom: 1px solid #FFFFFF;
+  padding: 32px 0;
 }
 
 .footer-text{
